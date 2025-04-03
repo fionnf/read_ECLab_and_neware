@@ -1,0 +1,5 @@
+numpy~=2.0.2
+matplotlib~=3.9.1.post1
+pandas~=2.2.3
+newarenda~=2025.4.2
+galvani~=0.5.0

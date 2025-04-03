@@ -78,24 +78,6 @@ plot_combined_capacity([df1, df2], ['Label1', 'Label2'], min_cycle=1, max_cycle=
 
 ## Examples
 
-### Processing ECLab Data
-
-```python
-import import_data
-
-df = import_data.process_eclab_mpr('path/to/eclab_file.mpr', theoretical_capacity=1.5)
-print(df.head())
-```
-
-### Processing Neware Data
-
-```python
-import import_data
-
-df = import_data.process_neware_data('path/to/neware_file.ndax', theoretical_capacity=0.52)
-print(df.head())
-```
-
 ### Plotting Combined Capacity
 
 ```python
