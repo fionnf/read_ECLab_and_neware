@@ -83,12 +83,12 @@ plot_combined_capacity([df1, df2], ['Label1', 'Label2'], min_cycle=1, max_cycle=
 ```python
 import import_data
 import matplotlib.pyplot as plt
-
+# from import_data import plot_combined_capacity
 df1 = import_data.process_eclab_mpr('path/to/eclab_file.mpr', theoretical_capacity=1.5)
 df2 = import_data.process_neware_data('path/to/neware_file.ndax', theoretical_capacity=0.52)
+# you may need to put r in front of the path if you have backslashes in the path (windows)
 
-fig = plot_combined_capacity([df1, df2], ['Label1', 'Label2'], min_cycle=1, max_cycle=250, save_image=True, save_path='combined_cap.png')
-plt.show()
+plot_combined_capacity([df1, df2], ['Label1', 'Label2'], min_cycle=1, max_cycle=250, save_image=True, save_path='combined_cap.png')
 ```
 
 ## Contributing
